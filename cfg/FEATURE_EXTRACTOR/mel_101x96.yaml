@@ -1,0 +1,10 @@
+# This setting follows the implementation of FSD50K
+# https://arxiv.org/pdf/2010.00475.pdf
+SAMPLE_RATE: 22050
+N_FFT: 441
+WIN_LENGTH: 441
+HOP_LENGTH: 220
+F_MIN: 0
+F_MAX: null
+N_MELS: 64  # 96
+WINDOW_TYPE: "hann"

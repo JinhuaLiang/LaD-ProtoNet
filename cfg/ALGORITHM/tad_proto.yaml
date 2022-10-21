@@ -1,0 +1,13 @@
+NAME: tad_proto
+MODEL:
+  NAME: vgg8
+  PRETRAINED_PATH: /homes/jl009/WORKSPACE/AudioTagging/results/embeded_labels/beta_75/epoch_5-0.3868.pth
+LOSS_FN: null
+BATCH_SIZE: 1
+
+EMBED_LABEL:
+  WEIGHTS_PATH: /homes/jl009/WORKSPACE/AudioTagging/src/fsd50k_distance_matrix.pkl
+  STATUS: true  # true, false
+  BETA: 30.0  # 75.0, 60.0, 45.0, 30.0, 15.0, 5.0
+
+ALIGN_TASK: true

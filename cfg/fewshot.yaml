@@ -1,0 +1,43 @@
+defaults:
+  - DATASOURCE: fsd50k
+  - FEATURE_EXTRACTOR: mel_101x96
+  - ALGORITHM: tad_proto
+  - _self_
+
+
+OUTPUTS:
+  DIR: /import/c4dm-02/jinhua/WORKPLACE/AudioTagging/results/fewshot/${DATASOURCE.NAME}/${ALGORITHM.NAME}/${FEWSHOT_SET.DATASAMPLING.train}/opt=${TRAINER.LEARNING_RATE}
+
+
+FEWSHOT_SET:
+  LABEL_SPLIT:
+    - 0.3  # = (n_novel_class / n_class)
+    - select
+  DATASAMPLING:
+    train: task_dependent
+    eval: multilabel_fs
+  MODE: train  # test train
+  NUM_TASK: 50
+  NUM_NVL_CLS: 15
+  NUM_SUPPORT_PER_CLS: 5
+  NUM_QUERY_PER_CLS: 5
+  SHUFFLE_CLASS: true
+  CUDA: True
+
+
+TRAINER:
+  K: 5  # 1, 5
+  RESUME_TRAINING: false
+  EPOCHS: 10
+  LEARNING_RATE: 6e-5  # 1e-4 6e-5
+  REQUIRE_PID: false
+
+
+TESTER:
+  NUM_QUERY_PER_CLS: 50
+  SHUFFLE_CLASS: false
+
+
+hydra:
+  run:
+    dir: ${OUTPUTS.DIR}

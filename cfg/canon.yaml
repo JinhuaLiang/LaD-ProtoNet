@@ -1,0 +1,25 @@
+defaults:
+  - DATASOURCE: esc50
+  - FEATURE_EXTRACTOR: default
+  - _self_
+
+OUTPUTS:
+  DIR: /import/c4dm-02/jinhua/WORKPLACE/AudioTagging/results/canon/${DATASOURCE.NAME}/opt=${TRAINER.LEARNING_RATE}/batch_size=${TRAINER.BATCH_SIZE}
+
+MODE: train
+
+MODEL:
+  NAME: vgg8
+  PRETRAINED_PATH: null
+
+TRAINER:
+  RESUME_TRAINING: false
+  LOSS_FN: null
+  EPOCHS: 300
+  BATCH_SIZE: 64
+  LEARNING_RATE: 1e-4
+  CUDA: True
+
+hydra:
+  run:
+    dir: ${OUTPUTS.DIR}

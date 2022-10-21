@@ -1,0 +1,8 @@
+NAME: esc50
+DATASET_DIR: /import/c4dm-datasets/ESC50
+
+NUM_CLASS: 50
+SINGLE_TARGET: true
+
+LABEL_SPLIT: null
+NUM_FOLD: 5 # cross-validation

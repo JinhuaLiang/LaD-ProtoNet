@@ -1,0 +1,6 @@
+NAME: proto
+MODEL:
+  NAME: vgg8
+  PRETRAINED_PATH: /homes/jl009/WORKSPACE/AudioTagging/results/embeded_labels/beta_75/epoch_5-0.3868.pth
+LOSS_FN: null
+BATCH_SIZE: 1

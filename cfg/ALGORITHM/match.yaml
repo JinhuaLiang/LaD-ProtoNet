@@ -1,0 +1,8 @@
+NAME: match
+MODEL:
+  NAME: match_net
+  PRETRAINED_PATH: null
+  INPUT_SIZE: 256
+  NUM_LSTM: 2
+LOSS_FN: null
+BATCH_SIZE: 1
