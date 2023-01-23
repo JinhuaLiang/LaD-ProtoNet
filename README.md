@@ -90,9 +90,13 @@ If you find this repo is useful, please cite the paper:
   journal={arXiv preprint arXiv:2212.08952},
   year={2022}
 }
-
 ```
 If you would like to use the FSD-FS database in your research, please cite the paper above as well as the paper:
 ```
-@ARTICLE{9645159,  author={Fonseca, Eduardo and Favory, Xavier and Pons, Jordi and Font, Frederic and Serra, Xavier},  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},   title={FSD50K: An Open Dataset of Human-Labeled Sound Events},   year={2022},  volume={30},  number={},  pages={829-852},  doi={10.1109/TASLP.2021.3133208}}
+@ARTICLE{9645159,  
+    author={Fonseca, Eduardo and Favory, Xavier and Pons, Jordi and Font, Frederic and Serra, Xavier},  
+    journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},   
+    title={FSD50K: An Open Dataset of Human-Labeled Sound Events},   
+    year={2022},  volume={30},  number={},  pages={829-852},  
+    doi={10.1109/TASLP.2021.3133208}}
 ```
