@@ -4,7 +4,7 @@ defaults:
   - _self_
 
 OUTPUTS:
-  DIR: /import/c4dm-02/jinhua/WORKPLACE/AudioTagging/results/canon/${DATASOURCE.NAME}/opt=${TRAINER.LEARNING_RATE}/batch_size=${TRAINER.BATCH_SIZE}
+  DIR: path/to/output
 
 MODE: train
 

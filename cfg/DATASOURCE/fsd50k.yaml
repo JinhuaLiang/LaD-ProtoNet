@@ -1,7 +1,7 @@
 NAME: fsd50k
-DATASET_DIR: /import/c4dm-datasets/FSD50K
-CLIPS_DIR: /import/c4dm-datasets/fsd50k_clips
-TAXONOMY_PATH: /homes/jl009/WORKSPACE/AudioTagging/src/taxonomy/ontology.json
+DATASET_DIR: path/to/FSD50K
+CLIPS_DIR: path/to/fsd50k_clips
+TAXONOMY_PATH: path/to/ontology.json
 OVERWRITE_CLIPS: false
 
 NUM_CLASS: 200

@@ -6,8 +6,7 @@ defaults:
 
 
 OUTPUTS:
-  DIR: /import/c4dm-02/jinhua/WORKPLACE/AudioTagging/results/fewshot/${DATASOURCE.NAME}/${ALGORITHM.NAME}/${FEWSHOT_SET.DATASAMPLING.train}/opt=${TRAINER.LEARNING_RATE}
-
+  DIR: path/to/output
 
 FEWSHOT_SET:
   LABEL_SPLIT:
